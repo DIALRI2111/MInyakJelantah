@@ -1,0 +1,130 @@
+/* === GLOBAL STYLE === */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #2c5f2d !important;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-toggler {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #d4edda !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/oil-bg.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/* Section Headings */
+section h2 {
+  color: #2c5f2d;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  background-color: #2c5f2d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Form Validation */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #198754;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #111 !important;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+}
+
+body.dark-mode .btn-outline-light {
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+/* === SCROLL ANIMATION === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}

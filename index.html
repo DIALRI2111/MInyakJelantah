@@ -1,121 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Minyak Jelantah - Solusi Daur Ulang</title>
-<meta name="description" content="JelaGreen - program pengumpulan dan daur ulang minyak jelantah menjadi produk bernilai seperti biodiesel dan sabun." />
-<!-- Favicon (optional) -->
-<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-<div class="container">
-<a class="navbar-brand fw-bold text-success" href="#">JelaGreen</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMain">
-<ul class="navbar-nav ms-auto align-items-lg-center">
-<li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-<li class="nav-item"><a class="nav-link" href="#impact">Dampak & Manfaat</a></li>
-<li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-<li class="nav-item ms-2 d-none d-lg-block"><a class="btn btn-outline-success" href="admin.html">Admin</a></li>
-</ul>
-</div>
-</div>
-</nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JelaGreen - Daur Ulang Minyak Jelantah</title>
+    <meta
+      name="description"
+      content="JelaGreen - program pengumpulan dan edukasi daur ulang minyak jelantah menjadi produk ramah lingkungan."
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">JelaGreen</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#artikel">Artikel Edukasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-lg-block">
+              <a class="btn btn-outline-light" href="admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Hero -->
+    <header
+      id="home"
+      class="hero text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="container fade-in">
+        <h1 class="display-5 fw-bold">Ubah Jelantah Jadi Berkah</h1>
+        <p class="lead">
+          Bergabunglah dalam gerakan peduli lingkungan dengan mendaur ulang
+          minyak jelantah menjadi energi baru yang bermanfaat.
+        </p>
+        <a href="#about" class="btn btn-light btn-lg mt-3"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </header>
 
-<!-- Hero -->
-<header id="home" class="hero-section py-5">
-<div class="container py-5">
-<div class="row align-items-center">
-<div class="col-lg-6">
-<h1 class="display-5 fw-bold">Daur Ulang Minyak Jelantah untuk Bumi Lebih Bersih</h1>
-<p class="lead text-muted">Bergabunglah dengan gerakan pengumpulan minyak goreng bekas (jelantah) untuk diolah menjadi produk berguna: biodiesel, sabun, atau bahan bakar alternatif.</p>
-<div class="mt-4">
-<a class="btn btn-success btn-lg me-2" href="#program">Cara Bergabung</a>
-<a class="btn btn-outline-success btn-lg" href="#contact">Hubungi Kami</a>
-</div>
-</div>
-<div class="col-lg-6 d-none d-lg-block text-center">
-<div class="card shadow-sm hero-card p-4">
-<i class="bi bi-droplet-fill display-1 text-success"></i>
-<h5 class="mt-3">Kumpulkan Minyak Jelantah</h5>
-<p class="text-muted">Sediakan botol atau jeriken untuk menampung minyak bekas. Kami jemput atau Anda drop ke titik terdekat.</p>
-</div>
-</div>
-</div>
-</div>
-</header>
+    <!-- Tentang -->
+    <section id="about" class="py-5 fade-in">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <img
+              src="images/about-oil.jpg"
+              class="img-fluid rounded shadow"
+              alt="Minyak Jelantah"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3">Apa Itu Minyak Jelantah?</h2>
+            <p>
+              Minyak jelantah adalah minyak goreng bekas yang sering dibuang
+              sembarangan. Padahal, minyak ini bisa diolah menjadi produk
+              berguna seperti biodiesel dan sabun alami.
+            </p>
+            <ul>
+              <li>♻️ Mencegah pencemaran air & tanah</li>
+              <li>💡 Dapat diubah menjadi biodiesel ramah lingkungan</li>
+              <li>🧼 Bahan dasar sabun ramah lingkungan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Artikel Edukasi -->
+    <section id="artikel" class="py-5 bg-light fade-in">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Artikel Edukasi</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="images/polusi.jpg"
+                class="card-img-top"
+                alt="Bahaya Minyak Jelantah"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bahaya Membuang Minyak Jelantah</h5>
+                <p class="card-text text-muted">
+                  Minyak jelantah yang dibuang ke saluran air dapat mencemari
+                  tanah dan air, serta mengganggu ekosistem sungai.
+                </p>
+                <a href="#" class="btn btn-success btn-sm">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="images/biodiesel.jpg"
+                class="card-img-top"
+                alt="Daur Ulang Jelantah"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dari Jelantah Jadi Biodiesel</h5>
+                <p class="card-text text-muted">
+                  Proses konversi minyak bekas menjadi biodiesel dapat menjadi
+                  solusi energi ramah lingkungan masa depan.
+                </p>
+                <a href="#" class="btn btn-success btn-sm"
+                  >Pelajari Prosesnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="images/sabun.jpg"
+                class="card-img-top"
+                alt="Sabun Daur Ulang"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Membuat Sabun dari Jelantah</h5>
+                <p class="card-text text-muted">
+                  Minyak jelantah dapat diolah menjadi sabun cair alami dengan
+                  bahan tambahan soda kostik dan aroma alami.
+                </p>
+                <a href="#" class="btn btn-success btn-sm">Lihat Tutorial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- About -->
-<section id="about" class="py-5">
-<div class="container">
-<div class="row g-4 align-items-center">
-<div class="col-md-6">
-<h2 class="fw-bold">Apa itu Minyak Jelantah?</h2>
-<p class="text-muted">Minyak jelantah adalah minyak goreng bekas pakai. Jika dibuang sembarangan, minyak ini menyebabkan penyumbatan saluran air, polusi, dan berpotensi merusak lingkungan. Namun jika dikelola dapat menjadi bahan baku bernilai.</p>
-<ul class="list-unstyled">
-<li>• Sumber polusi ketika masuk ke saluran air.</li>
-<li>• Berpotensi diolah menjadi biodiesel, sabun, atau bahan bakar.</li>
-</ul>
-</div>
-<label class="form-label">Pesan</label>
-<textarea class="form-control" id="contactMessage" rows="4" required></textarea>
-<div class="invalid-feedback">Pesan wajib diisi.</div>
-</div>
-<div class="d-flex justify-content-end">
-  <button type="submit" class="btn btn-success">Kirim Pesan</button>
-</div>
-</form>
-</div>
-</div>
-</div>
+    <!-- Kontak -->
+    <section id="contact" class="py-5 fade-in">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Kontak Kami</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card p-4 shadow-sm h-100">
+              <h5>Hubungi Kami</h5>
+              <p>Email: info@jelagreen.org<br />Tel: +62 812 3456 7890</p>
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    required
+                  />
+                  <div class="invalid-feedback">Nama wajib diisi.</div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    required
+                  />
+                  <div class="invalid-feedback">Email wajib diisi.</div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Pesan wajib diisi.</div>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100 p-3">
+              <h5>Titik Drop Minyak Jelantah</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Jelantah Center UI – Depok</li>
+                <li class="list-group-item">
+                  Bank Sampah Hijau – Jakarta Selatan
+                </li>
+                <li class="list-group-item">Posko EcoWaste – Tangerang</li>
+              </ul>
+              <div class="mt-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.99118639995!2d106.82303621432661!3d-6.364556264117655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1555555555%3A0x123456789abcdef!2sUniversitas%20Indonesia!5e0!3m2!1sid!2sid!4v1684140000000!5m2!1sid!2sid"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="col-md-6">
-<div class="card h-100 shadow-sm p-3">
-  <div class="card-body">
-    <h5 class="card-title">Titik Drop Minyak Jelantah</h5>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Jelantah Center UI – Depok</li>
-      <li class="list-group-item">Bank Sampah Hijau – Jakarta Selatan</li>
-      <li class="list-group-item">Posko EcoWaste – Tangerang</li>
-    </ul>
-    <div class="mt-3">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.99118639995!2d106.82303621432661!3d-6.364556264117655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1555555555%3A0x123456789abcdef!2sUniversitas%20Indonesia!5e0!3m2!1sid!2sid!4v1684140000000!5m2!1sid!2sid"
-        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 JelaGreen. Semua hak cipta dilindungi.</p>
+        <button id="darkModeToggle" class="btn btn-outline-light mt-2">
+          🌙 Mode Gelap
+        </button>
+      </div>
+    </footer>
 
-<!-- Footer -->
-<footer class="text-center py-4 bg-dark text-light">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 Jelagreen – Program Daur Ulang Minyak Jelantah</p>
-    <small>Dibuat oleh Diffa Algifari Adzsa</small>
-  </div>
-</footer>
-
-<!-- Bootstrap JS & Custom Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
